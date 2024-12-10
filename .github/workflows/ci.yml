@@ -28,3 +28,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           lint_xml_file: app/build/reports/lint-results-debug.xml
+          reviewdog_flags: -filter-mode=nofilter
+          reporter: github-pr-check
